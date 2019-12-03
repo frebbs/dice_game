@@ -62,7 +62,7 @@ while is_running
   # Increment the game counter by 1
   counter += 1
 
-  # If one of the players reaches the wind_condition total, run this section
+  # If one of the players reaches the win_condition total, run this section
   unless p1_win_count == win_condition_total || p2_win_count == win_condition_total
     next
   end
