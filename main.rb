@@ -53,7 +53,7 @@ while is_running
 
   # If player one wins this round, increment the p1_win_count by 1
   p1_win_count += 1 if p1_roll_total > p2_roll_total
-  # If player oen wins this round, increment the p2_win_count by 1
+  # If player two wins this round, increment the p2_win_count by 1
   p2_win_count += 1 if p1_roll_total < p2_roll_total
 
   puts "Starting next game......"
