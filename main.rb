@@ -21,7 +21,7 @@ end
 # Initial start values for the game
 p1_win_count = 0
 p2_win_count = 0
-win_condition_total = 23
+win_condition_total = ARGV[0].to_i | 1
 draws = 0
 
 # Time between rolls
@@ -71,7 +71,7 @@ while is_running
   puts "Player two wins!" if p2_win_count == win_condition_total
   puts " "
   puts "Would you like to play again? (Y or any key to exit)"
-  play_again = gets.chomp
+  play_again = STDIN.gets.chomp
   # Pass the player answer to the play_again method then execute the if section
   play_again(play_again)
   if play_again(play_again)
