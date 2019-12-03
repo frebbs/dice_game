@@ -40,12 +40,11 @@ while is_running
   puts " "
   counter += 1
 
-  if p1_win_count == 10 || p2_win_count == 10
-    puts "Player wincount #{p1_win_count} #{p2_win_count} #{draws}"
-    puts "Player one wins!" if p1_win_count == 10
-    puts "Player two wins!" if p2_win_count == 10
+  next unless p1_win_count == 10 || p2_win_count == 10
+  puts "Scores\nP1: #{p1_win_count}\tP2: #{p2_win_count}\nDraws: #{draws}"
+  puts "Player one wins!" if p1_win_count == 10
+  puts "Player two wins!" if p2_win_count == 10
 
-    is_running = false
+  is_running = false
 
-  end
 end
